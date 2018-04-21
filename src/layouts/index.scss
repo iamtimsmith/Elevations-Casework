@@ -1,0 +1,128 @@
+/*=== IMPORTS ===*/
+
+
+/*=== VARIABLES ===*/
+$clear: rgba(0,0,0,0);
+
+/*=== MIXINS ===*/
+
+
+/*=== GENERAL ===*/
+
+
+/*=== HEADER ===*/
+
+
+
+/*=== OFFCANVAS ===*/
+#offcanvas {
+  position:fixed;
+  top:0;
+  left:-100px;
+  bottom:0;
+  background:black;
+  padding:80px 20px 10px;
+  width:100px;
+  text-align:center;
+  overflow:hidden;
+  transition:all .5s;
+  &.showing {
+    left:0;
+    width:100%;
+    ul {
+      opacity:1;
+    }
+  }
+  ul {
+    opacity:0;
+    transition:all .25s;
+    li {
+      a {
+      color:white !important;
+      font-size:2em;
+      line-height:2em;
+    }
+  }
+  }
+}
+.offcanvas-toggle {
+  outline:none;
+  margin:10px;
+  background:$clear;
+  span {
+    content:'';
+    display:block;
+    height:2px;
+    width:30px;
+    background:black;
+    transition:all .5s;
+    &:before {
+      content:'';
+      position:relative;
+      bottom:7.5px;
+      display:block;
+      height:2px;
+      width:30px;
+      background:black;
+      transition:all .5s;
+    }
+    &:after {
+      content:'';
+      position:relative;
+      top:7.5px;
+      display:block;
+      height:2px;
+      width:30px;
+      background:black;
+      transition:all .5s;
+    }
+  }
+  &.active {
+    span {
+      background:$clear;
+      &:before {
+        top:-1px;
+        background:white;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+      }
+      &:after {
+        top:-2px;
+        background:white;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+    }
+  }
+}
+@media (min-width:1088px) {
+  .offcanvas-toggle {
+    visibility:hidden;
+  }
+}
+
+
+/*=== FOOTER ===*/
+.footer {
+  background: black;
+  ul {
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+    li {
+      a {
+        color:white;
+        margin:0 15px;
+        i {
+          font-size:1.5em;
+        }
+      }
+    }
+  }
+}
