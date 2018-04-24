@@ -16,7 +16,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} siteNav={data.site.siteMetadata.menu} />
+    
     <div style={{minHeight:'750px', marginTop:`64px`}} className='content'>
       {children()}
     </div>
