@@ -17,7 +17,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} siteNav={data.site.siteMetadata.menu} />
-    <div className='container'>
+    <div style={{minHeight:'750px', marginTop:`64px`}} className='content'>
       {children()}
     </div>
     <Footer />
@@ -35,10 +35,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        menu {
-          name
-          url
-        }
       }
     }
   }

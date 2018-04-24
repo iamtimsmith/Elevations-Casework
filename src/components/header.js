@@ -9,7 +9,7 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <nav className='navbar'>
+      <nav className='navbar' style={{position:`fixed`, top:`0`, left:`0`, right:`0`}}>
         <div className="container">
           <div className="navbar-start" style={{display:'flex'}}>
             <div className="navbar-brand" id='navbarBrand'>

@@ -8,10 +8,29 @@ $clear: rgba(0,0,0,0);
 
 
 /*=== GENERAL ===*/
-
+#content {
+  opacity:0;
+  animation:fadeIn .5s linear .5s 1 forwards;
+  -webkit-animation:fadeIn .5s linear .5s 1 forwards;
+  -moz-animation:fadeIn .5s linear .5s 1 forwards;
+  -o-animation:fadeIn .5s linear .5s 1 forwards;
+}
 
 /*=== HEADER ===*/
-
+.navbar {
+  box-shadow:0 0 10px #333;
+  .navbar-menu {
+    li {
+      a {
+        color:black;
+        transition:all .25s;
+        &:hover {
+          color:#666;
+        }
+      }
+    }
+  }
+}
 
 
 /*=== OFFCANVAS ===*/
@@ -55,7 +74,7 @@ $clear: rgba(0,0,0,0);
     height:2px;
     width:30px;
     background:black;
-    transition:all .5s;
+    transition:all .25s;
     &:before {
       content:'';
       position:relative;
@@ -111,6 +130,7 @@ $clear: rgba(0,0,0,0);
 /*=== FOOTER ===*/
 .footer {
   background: black;
+  background-image: url('../static/diagmonds.png');
   ul {
     display:flex;
     justify-content:center;
@@ -125,4 +145,11 @@ $clear: rgba(0,0,0,0);
       }
     }
   }
+}
+
+
+/*=== KEYFRAMES ===*/
+@keyframes fadeIn {
+  0% {display:none; opacity:0;}
+  100% {display:initial; opacity:1;}
 }
