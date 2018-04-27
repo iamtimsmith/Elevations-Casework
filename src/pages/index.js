@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Category from '../components/frontCat'
 
 import HeroImg from '../static/LangmanConstruction.jpg'
-import ComImg from '../static/DrJava.jpg'
+import ComImg from '../static/commercial/DrJava.jpg'
 import EduImg from '../static/ClintonCollege.jpg'
 import MedImg from '../static/UnityPoint.jpg'
 

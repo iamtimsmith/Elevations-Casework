@@ -27,6 +27,12 @@ a, button, input {
     opacity:1;
   }
 }
+.gallery-item:after {
+  content:'';
+  display:block;
+  padding-bottom:100%;
+
+}
 
 /*=== HEADER ===*/
 .navbar {

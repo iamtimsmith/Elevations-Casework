@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Header from '../../components/header'
 
-import comImg from '../../static/DrJava.jpg'
+import comImg from '../../static/commercial/DrJava.jpg'
 import eduImg from '../../static/ClintonCollege.jpg'
 import heaImg from '../../static/UnityPoint.jpg'
 
