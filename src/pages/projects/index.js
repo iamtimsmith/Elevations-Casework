@@ -10,7 +10,8 @@ const linkStyle = {
   height:`400px`, 
   overflow:`hidden`, 
   position:`relative`, 
-  zIndex:`1`
+  zIndex:`1`,
+  border:`10px solid white`
 }
 
 const imgStyle = {

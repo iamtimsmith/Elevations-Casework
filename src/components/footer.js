@@ -18,6 +18,9 @@ export default () => (
           <Link to='contact'>Contact</Link>
         </li>
       </ul>
+      <small className='has-text-centered' style={{fontSize:`0.8em`, position:`relative`, top:`30px`}}>
+        <p className='has-text-white'>Website by <a href='https://www.iamtimsmith.com' className='has-text-white'>Tim Smith</a></p>
+      </small>
     </div>
   </footer> 
 )

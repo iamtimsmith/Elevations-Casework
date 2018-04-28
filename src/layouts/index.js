@@ -17,7 +17,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     
-    <div style={{minHeight:'750px', marginTop:`64px`}} className='content'>
+    <div style={{minHeight:'750px', marginTop:`60px`}} className='content'>
       {children()}
     </div>
     <Footer />

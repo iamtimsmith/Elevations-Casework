@@ -31,14 +31,30 @@ a, button, input {
   content:'';
   display:block;
   padding-bottom:100%;
-
+}
+input,
+textarea {
+  border:1px solid #bbb;
+  font-size:16px!important;
+  outline:none!important;
+}
+textarea {
+  height:200px;
+  resize:none;
 }
 
 /*=== HEADER ===*/
 .navbar {
   box-shadow:0 0 10px #333;
+  .navbar-brand {
+    img {
+      max-height:40px;
+      margin-top:10px;
+    }
+  }
   .navbar-menu {
     li {
+      margin-top:0.25em;
       a {
         color:black;
         transition:all .25s;
