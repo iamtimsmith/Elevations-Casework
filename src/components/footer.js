@@ -15,7 +15,7 @@ export default () => (
           <Link to='/projects'>Projects</Link>
         </li>
         <li>
-          <Link to='contact'>Contact</Link>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
       <small className='has-text-centered' style={{fontSize:`0.8em`, position:`relative`, top:`30px`}}>

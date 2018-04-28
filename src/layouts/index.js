@@ -12,8 +12,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Elevations Casework is a cabinet shop in Davenport, IA which specializes in custom millwork, custom cabinets, and countertops for commercial, educational, and healthcare settings.' },
+        { name: 'keywords', content: 'cabinet, custom millwork, countertop, custom cabinets' },
       ]}
     />
     

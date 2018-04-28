@@ -10,13 +10,15 @@ export default () => (
         <h1 className='has-text-centered' style={{marginBottom:`50px`}}>Contact Us for a Quote!</h1>
         <div className='columns'>
           <div className='column'>
-            <iframe style={{display:`none`}} id="alt"></iframe>
-            <form action="form.php" target="#alt" style={{width:`100%`}}>
+          <iframe name="votar" style={{display:'none'}}></iframe>
+    <form action="http://www.elevationscasework.com/mailer.php" method="post" target="votar" id='contact'>
+            <p id='formResponse' style={{color:'green', opacity:'0', transition:'opacity .25s', textAlign:'center'}}>Thanks for reaching out to us. We'll be in contact as soon as possible!</p>
               <input type="text" name="name" placeholder="Name" style={{width:`100%`, padding:`5px`, fontSize:`14px`, marginBottom:`10px`}}/>
               <input type="text" name="email" placeholder="Email" style={{width:`100%`, padding:`5px`, fontSize:`14px`, marginBottom:`10px`}}/>
               <input type="text" name="subject" placeholder="Subject" style={{width:`100%`, padding:`5px`, fontSize:`14px`, marginBottom:`10px`}}/>
+              <p style={{display:'none'}}>Empty: <input type="text" name="url" /></p>
               <textarea name="message" placeholder="Message" style={{width:`100%`, padding:`5px`, fontSize:`14px`, marginBottom:`10px`}}></textarea>
-              <input type="submit" value="Send" className='button'/>
+              <input type="submit" name="submit" value="Send" onClick={formSumbit} className='button' />
             </form>
           </div>
           <div className='column'>
@@ -31,5 +33,12 @@ export default () => (
         </div>
       </section>
     </div>
-  </div>
+    </div>
 )
+
+const formSumbit = () => {
+  setTimeout( () => {
+    document.getElementById('contact').reset()
+    document.getElementById('formResponse').style.opacity = '1'
+  }, 1000)
+}
