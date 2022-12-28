@@ -27,7 +27,6 @@ export default () => (
             <p style={{ margin: `0` }} className='has-text-centered'>Davenport, IA 52804</p>
             <p style={{ margin: `0` }} className='has-text-centered'>Phone: 563-381-9062</p>
             <br />
-            <p style={{ margin: `0` }} className='has-text-centered'>Scott: <a href="mailto:scott@elevationscasework.com">scott@elevationscasework.com</a></p>
             <p style={{ margin: `0` }} className='has-text-centered'>Hours of Operation: 7:00am – 3:30pm</p>
           </div>
         </div>
